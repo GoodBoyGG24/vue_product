@@ -1,6 +1,6 @@
 <template>
-    <div class="p-12">
-        <form @submit.prevent="handleSubmit">
+    <div class="p-12 w-25">
+        <form @submit.prevent="handleSubmit" class="">
             <div class="mb-5">
                 <label for="name" class="mb-3 block text-base font-medium text-gray-900">
                     Product Name
@@ -47,7 +47,7 @@ export default {
             error: false,
             success: false,
 
-            product:{
+            product: {
                 name: '',
                 price: '',
                 amount: ''

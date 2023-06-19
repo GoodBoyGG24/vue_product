@@ -1,5 +1,12 @@
 <template>
-  <product-form @add-product="addProduct" />
+  <div class="coontainer justify-center">
+    <div class="w-4/5">
+      <product-form @add-product="addProduct" />
+    </div>
+
+    
+  </div>
+  
   <product-table :products="products" 
   @delete:product="deleteProduct" 
   @edit:product = "editProduct"
@@ -20,9 +27,9 @@ export default {
       products: [
         {
           id: '1',
-          name: 'Acer Swift-3',
-          price: '12000000',
-          amount: '10'
+          name: 'Asus Tuf-15 Gaming', 
+          price: '12899000',
+          amount: '5'
         },
       ]
     }
